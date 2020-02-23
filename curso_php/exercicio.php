@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/estilo.css">
-    <title>Curso PHP</title>   
+    <link rel="stylesheet" href="assets/css/exercicio.css">
+    <title>Exercício</title>   
 </head>
-<body>
+<body class="exercicio">
     <header class="cabecalho">
         <h1>Curso PHP</h1>
-        <h2>Índice de exercícios</h2>
+        <h2>Visualização do exercício</h2>
     </header>
+    <nav class="navegacao">
+        <a href="" class="verde">Sem formatação</a>
+        <a href="index.php" class="vermelho">Voltar</a>
+    </nav>
     <main class="principal">
         <div class="conteudo">
-            <nav class="modulos">
-                <div class="modulo verde">
-                    <h3>Módulo 01</h3>
-                    <ul>
-                        <li><a href="exercicio.php">Exercício A</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <?php
+                include("teste/teste.php");
+            ?>
         </div>
     </main>
     <footer class="rodape">
